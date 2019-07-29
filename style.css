@@ -1,0 +1,120 @@
+.navbar-header {
+    float: center;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+}
+.navbar-brand {
+  float:none;
+  font-family: 'Lobster', cursive;
+  font-size: 1.5em !important;
+  color: white !important;
+}
+
+.masthead {
+  position: relative;
+  color: white !important;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background-image: image();
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.masthead h1 {
+  font-family: 'Varela Round';
+  font-size: 2rem !important;
+  line-height: 2.5rem;
+  letter-spacing: 0.4rem;
+  -webkit-background-clip: text;
+  margin-bottom: 10px;
+}
+
+.masthead h3 {
+  font-family: 'Varela Round';
+  font-size: 1.1rem !important;
+  line-height: 2.5rem;
+  -webkit-background-clip: text;
+  margin-bottom: 30px !important;
+}
+
+.masthead h2 {
+  font-family: 'Varela Round';
+  font-size: 1.5rem !important;
+  line-height: 2.5rem;
+  -webkit-background-clip: text;
+  color: #64a19d;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .masthead h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+    padding: 0;
+  }
+  .masthead h1 {
+    font-size: 6.5rem;
+    line-height: 6.5rem;
+    letter-spacing: 0.8rem;
+  }
+}
+.btn {
+  -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 1rem !important;
+  border-color:  #64a19d !important;
+  font-family: 'Varela Round';
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  border: 0;
+  margin: 10px;
+}
+
+.btn-primary {
+  background-color: #64a19d !important;
+}
+
+.btn-primary:hover {
+  background-color: #4f837f !important;
+}
+
+.btn-primary:focus {
+  background-color: #4f837f !important;
+  color: white;
+}
+
+.btn-primary:active {
+  background-color: #467370 !important;
+}
+.wrapper {
+  /* The image used */
+  background-image: url("bg.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+.title {
+  margin-bottom: 30px;
+}

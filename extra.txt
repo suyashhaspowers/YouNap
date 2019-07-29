@@ -1,0 +1,35 @@
+napping time thing (nap cycles) - perfect the cycle
+
+napping is supposed to re-energize etc.Therefore, it is important to nap and wake up at a time such that yo
+
+
+0 - 19 hours:
+y=10.21039 + 0.4679027x + 0.006635908x^2
+
+19 hour:
+y= -804.6429+82.83571x-2.071429x^2
+
+20 - 24 hours:
+y = -420643 + 79339.91x - 5596.329x^2 + 174.9667x^3 - 2.045833x^4
+
+A power nap is a 20 minute long nap which is used to quickly
+boost the energy and alertness of the napper. For this nap, the napper stays within the lighter stages
+of NREM (non-rapid eye movement) sleep, thus preventing the napper from reaching deep stages of sleep. This allows
+the napper to wake up with ease.
+
+The recall nap is a 60 minute long nap which helps the napper remember 
+faces, places, and faces with more ease. For this nap, the napper reaches
+deeper stages of sleep (slow-wave sleep). However, since an entire sleep
+cycle isn't completed, the napper may wake up feeling unvigilant and tired for some time.
+
+
+A full nap is 90 minutes long which undergoes the full length of one sleep cycle. This is considered
+the most ideal nap length as the napper passes through all the light and deep (REM and dreaming) stages of sleep.
+Going through a full sleep cycle greatly improves procdural and emotional memory while
+also boosting the napper's creativity levels. Furthermore, waking up from this time of nap is the easiest
+because the napper wakes up upon the completion of an entire sleep cycle.
+
+According to Dr. Sara Mednik, the perfect time to take a full 90 minute nap is the point in the 
+day when REM and slow-wave sleep intersect. This is a perfectly balanced state in which REM and slow-wave sleep are equally proportioned. The time of day where this
+occurs is solely dependent on the time an individual wakes up. Hence, simply input the time of day you woke up and determine what time you should start
+and finsih your nap.

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+  <title>YouNap</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Lobster Font -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!--icon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+
+</head>
+<body>
+<div class="wrapper">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="navbar-header">
+      <a class="navbar-brand" id="navBrand" href="index.html">YouNap</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <div class="title">
+          <h1 class="mx-auto my-0">Set an alarm to wake up at :</h1>
+          <h3 id="naptime">00:00 AM</h3>
+
+          <!-- JS FUNCTIONALITY -->
+          <script>
+            function getTime() {
+              //making current date object
+              var currentTime = new Date();
+
+              //getting current minutes and hours
+            var minutes = currentTime.getMinutes();
+            var hours = currentTime.getHours();
+
+            //var minutes = 46;
+            //var hours = 3;
+
+              // adding 34 to minutes of current time
+              var add = minutes + 74;
+
+              // determining if hours increase based on final addition value
+              if (add > 130) {
+                hours = hours + 2;
+                var extra = add - 60;
+                minutes = 0 + extra;
+                var y = minutes.toString();
+                var startTime = ":" + y;
+              }
+              else if (add < 130 && add > 120) {
+                hours = hours + 2;
+                var extra = add - 60;
+                minutes = 0 + extra;
+                var y = minutes.toString();
+                var startTime = ":0" + y;
+              }
+              else if (add < 120) {
+                hours = hours + 1;
+                add = add - 60;
+                var y = add.toString();
+                var startTime = ":" + y;
+              }
+              else if (add == 120) {
+                hours = hours + 2;
+                minutes = 0;
+                var y = minutes.toString();
+                var startTime = ":" + y+"0";
+              }
+
+              if (hours == 24) {
+                hours = 12;
+              }
+              else if (hours == 0) {
+                hours = 12;
+              }
+
+              // displaying am or pm depending on hours value
+              if (hours > 12) {
+                hours = hours - 12;
+                var z = hours.toString();
+                document.getElementById("naptime").innerHTML = z + startTime + " PM";
+              }
+              else {
+                var z = hours.toString();
+                document.getElementById("naptime").innerHTML = z + startTime + " AM";
+              }
+            }
+            getTime();
+          </script>
+
+
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+</body>
+</>
