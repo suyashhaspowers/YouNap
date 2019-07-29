@@ -102,7 +102,16 @@ cycle isn't completed, the napper may wake up feeling unvigilant and tired for s
         tenEleven = true;
       }
 
-      if (hours > 12) {
+      if (hours == 12) {
+        var z = hours.toString();
+        document.getElementById("naptime").innerHTML = z + startTime + " PM";
+      }
+      else if (hours == 0){
+        hours =12;
+        var z = hours.toString();
+        document.getElementById("naptime").innerHTML = z + startTime + " AM";
+      }
+      else if (hours > 12) {
         hours = hours - 12;
         var z = hours.toString();
         document.getElementById("naptime").innerHTML = z + startTime + " PM";
@@ -111,7 +120,7 @@ cycle isn't completed, the napper may wake up feeling unvigilant and tired for s
         var z = hours.toString();
         document.getElementById("naptime").innerHTML = z + startTime + " PM";
       }
-      else if (hours <= 12) {
+      else if (hours < 12) {
         var z = hours.toString();
         document.getElementById("naptime").innerHTML = z + startTime + " AM";
       }
